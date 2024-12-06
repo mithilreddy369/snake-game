@@ -26,4 +26,4 @@ The game includes the following key features:
 - The game ends when a collision occurs, and you can restart it by pressing the **Start** button.
 
 
-![image](https://github.com/user-attachments/assets/0549f759-4539-4328-8dc4-51b918751390)
+![image](https://github.com/user-attachments/assets/87eecf78-be3b-47a6-b609-e8f9ddc33b8f)
