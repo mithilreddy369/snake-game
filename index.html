@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Game container -->
+  <div id="gameContainer">
+    <h1>Snake Game</h1>
+
+    <!-- Stats container -->
+    <div id="statsContainer">
+      <div class="stat">
+        High Score: <span id="highScore">0</span>
+      </div>
+      <div class="stat">
+        Games Played: <span id="gamesPlayed">0</span>
+      </div>
+      <div class="stat">
+        Score: <span id="score">0</span>
+      </div>
+    </div>
+
+    <!-- Game Canvas -->
+    <div id="gameCanvasWrapper">
+      <canvas id="gameCanvas" width="300" height="300"></canvas>
+    </div>
+
+    <!-- Start Button -->
+    <button id="startButton">Start Game</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

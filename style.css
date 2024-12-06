@@ -1,0 +1,164 @@
+/* General body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #1f1f1f); /* Darker gradient for a more futuristic vibe */
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+/* Game container styling */
+#gameContainer {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.8);
+  width: 80%;
+  max-width: 480px;
+  text-align: center;
+  border: 2px solid #00b3b3; /* Futuristic cyan color */
+  backdrop-filter: blur(12px);
+}
+
+/* Title styling */
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #00b3b3; /* Futuristic cyan color */
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Stats container styling */
+#statsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  background: rgba(0, 0, 0, 0.7); /* Dark background with some transparency */
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem; /* Reduced font size */
+  box-shadow: inset 0px 2px 15px rgba(0, 0, 0, 0.6);
+  width: 95%;
+}
+
+.stat {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  color: #00b3b3; /* Futuristic cyan text */
+}
+
+.stat span {
+  font-weight: bold;
+  color: #ff66cc; /* Futuristic purple color */
+  font-size: 1.2rem;
+}
+
+/* Canvas styling */
+#gameCanvas {
+  background: #121212;
+  border: 2px solid #00b3b3;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Button styling */
+#startButton {
+  background: #00b3b3; /* Futuristic cyan color */
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#startButton:hover {
+  background: #009999; /* Slightly darker cyan for hover */
+  box-shadow: 0px 5px 25px rgba(0, 153, 153, 0.8);
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem; /* Slightly reduce font size for mid-sized screens */
+  }
+
+  #statsContainer {
+    font-size: 0.85rem;
+    flex-direction: column;
+    padding: 8px 16px;
+  }
+
+  .stat {
+    margin-bottom: 10px;
+  }
+
+  #startButton {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem; /* Slightly reduced font size for tablets */
+  }
+
+  #statsContainer {
+    font-size: 0.8rem;
+    flex-direction: column;
+    padding: 6px 14px;
+  }
+
+  .stat {
+    margin-bottom: 8px;
+  }
+
+  #startButton {
+    padding: 10px 22px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem; /* Reduce font size for small screens */
+  }
+
+  #statsContainer {
+    font-size: 0.75rem;
+    flex-direction: column;
+    padding: 6px 10px;
+  }
+
+  .stat {
+    margin-bottom: 6px;
+  }
+
+  #startButton {
+    padding: 8px 18px;
+    font-size: 0.95rem;
+  }
+
+  #gameCanvas {
+    margin-bottom: 20px;
+  }
+}
