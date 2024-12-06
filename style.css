@@ -47,7 +47,7 @@ h1 {
   background: rgba(0, 0, 0, 0.6); /* Dark, semi-transparent background */
   padding: 8px 16px;
   border-radius: 8px;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   box-shadow: inset 0px 2px 15px rgba(0, 0, 0, 0.5);
   width: 94%;
 }
