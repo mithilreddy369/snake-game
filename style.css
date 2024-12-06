@@ -1,7 +1,7 @@
 /* General body styling */
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #0a0a0a, #1f1f1f); /* Darker gradient for a more futuristic vibe */
+  background: linear-gradient(135deg, #0a0a0a, #141d2a); /* Deep dark blue gradient for a premium feel */
   color: #fff;
   text-align: center;
   margin: 0;
@@ -11,27 +11,27 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  flex-direction: column; /* Stack elements vertically */
+  flex-direction: column;
 }
 
 /* Game container styling */
 #gameContainer {
-  background: #1a1a1a;
+  background: rgba(30, 45, 62, 0.9); /* Dark slate background with opacity */
   padding: 25px;
   border-radius: 20px;
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.9); /* Deep shadow for added depth */
   width: 80%;
   max-width: 480px;
   text-align: center;
-  border: 2px solid #00b3b3; /* Futuristic cyan color */
-  backdrop-filter: blur(12px);
+  border: 2px solid #e0e0e0; /* Light silver border for a classy feel */
+  backdrop-filter: blur(10px);
 }
 
 /* Title styling */
 h1 {
   font-size: 3rem;
   margin: 0;
-  color: #00b3b3; /* Futuristic cyan color */
+  color: #f0c674; /* Soft gold color for a premium, high-end look */
   letter-spacing: 3px;
   margin-bottom: 20px;
   font-family: 'Orbitron', sans-serif;
@@ -44,12 +44,12 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
-  background: rgba(0, 0, 0, 0.7); /* Dark background with some transparency */
-  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.6); /* Dark, semi-transparent background */
+  padding: 8px 16px;
   border-radius: 8px;
-  font-size: 0.9rem; /* Reduced font size */
-  box-shadow: inset 0px 2px 15px rgba(0, 0, 0, 0.6);
-  width: 95%;
+  font-size: 0.9rem;
+  box-shadow: inset 0px 2px 15px rgba(0, 0, 0, 0.5);
+  width: 94%;
 }
 
 .stat {
@@ -57,30 +57,30 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-family: 'Orbitron', sans-serif;
-  color: #00b3b3; /* Futuristic cyan text */
+  color: #f0c674; /* Soft gold text */
 }
 
 .stat span {
   font-weight: bold;
-  color: #ff66cc; /* Futuristic purple color */
+  color: #8d8d8d; /* Light silver for stats values */
   font-size: 1.2rem;
 }
 
 /* Canvas styling */
 #gameCanvas {
-  background: #121212;
-  border: 2px solid #00b3b3;
+  background: #1a2331; /* Rich, dark background for the canvas */
+  border: 2px solid #e0e0e0; /* Light silver border for a clean look */
   border-radius: 12px;
   margin-bottom: 25px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
   width: 100%;
   max-width: 100%;
 }
 
 /* Button styling */
 #startButton {
-  background: #00b3b3; /* Futuristic cyan color */
-  color: #fff;
+  background: #f0c674; /* Soft gold background for the button */
+  color: #000000;
   font-size: 1.2rem;
   font-weight: bold;
   border: none;
@@ -88,17 +88,26 @@ h1 {
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 #startButton:hover {
-  background: #009999; /* Slightly darker cyan for hover */
-  box-shadow: 0px 5px 25px rgba(0, 153, 153, 0.8);
+  background: #d9b36d; /* Slightly darker gold for hover */
+  box-shadow: 0px 5px 25px rgba(255, 212, 139, 0.8);
+}
+
+/* Snake styling */
+.snake {
+  background-color: #1dce7c; /* Vibrant green for the snake */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 /* Responsive Layout */
 @media screen and (max-width: 1024px) {
   h1 {
-    font-size: 2.5rem; /* Slightly reduce font size for mid-sized screens */
+    font-size: 2.5rem;
   }
 
   #statsContainer {
@@ -119,7 +128,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 2.2rem; /* Slightly reduced font size for tablets */
+    font-size: 2.2rem;
   }
 
   #statsContainer {
@@ -140,7 +149,7 @@ h1 {
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 1.8rem; /* Reduce font size for small screens */
+    font-size: 1.8rem;
   }
 
   #statsContainer {
