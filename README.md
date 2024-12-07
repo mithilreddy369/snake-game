@@ -14,7 +14,7 @@ This is a Snake Game implemented using HTML5, CSS, and JavaScript. The game feat
 
 ## Game Logic
 The game includes the following key features:
-- **Snake Movements**: The snake moves across the canvas, responding to keyboard inputs (Arrow keys or WASD).
+- **Snake Movements**: The snake moves across the canvas, responding to keyboard inputs (Arrow keys).
 - **Food Generation**: Randomly generates food items for the snake to eat, which increases the snake's size.
 - **Collision Detection**: Detects collisions with walls and the snake's body, ending the game when a collision occurs.
 - **Score Tracking**: Displays the current score, high score, and the number of games played, which are updated throughout the game.
